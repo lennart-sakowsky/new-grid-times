@@ -142,12 +142,12 @@ const TopRow = styled.div`
   border-bottom: 1px solid var(--color-gray-700);
   padding: 24px 0;
 
-  @media ${QUERIES.tabletAndUp} {
+   @media ${QUERIES.tabletAndUp} {
     flex-direction: row;
     justify-content: center;
     gap: 48px;
   }
-  
+
   @media ${QUERIES.laptopAndUp} {
     justify-content: flex-end;
   }
@@ -180,8 +180,9 @@ const MainNavArea = styled.div`
 
   @media ${QUERIES.tabletAndUp} {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 32px 64px;
+    flex-direction: revert;
     text-align: left;
   }
 `;

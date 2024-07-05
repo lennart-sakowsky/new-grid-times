@@ -25,14 +25,13 @@ const Avatar = styled.img`
   float: right;
   width: 48px;
   height: 48px;
-  margin-top: 2px;
-  margin-left: 8px;
+  margin-left: 16px;
   border-radius: 50%;
   object-fit: cover;
 
   @media ${QUERIES.tabletOnly} {
     float: revert;
-    margin: 0 0 8px 0;
+    margin-left: revert;
   }
 `;
 

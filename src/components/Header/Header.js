@@ -90,10 +90,10 @@ const MainHeader = styled(MaxWidthWrapper)`
   @media ${QUERIES.laptopAndUp} {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
+    align-items: center;
     justify-content: revert;
     justify-items: start;
     margin-top: 16px;
-    margin-bottom: 72px;
   }
 `;
 
@@ -109,20 +109,21 @@ const SubscribeActionGroup = styled.div`
   display: none;
 
   @media ${QUERIES.laptopAndUp} {
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 8px;
-    align-items: center;
-    align-self: end;
-    margin-left: auto;
+    display: revert;
+    position: relative;
+    justify-self: end;
   }
 `;
 
 const Link = styled.a`
+  position: absolute;
+  width: 100%;
+  margin-top: 8px;
   font-size: 0.875rem;
   font-style: italic;
-  color: ${COLORS.gray[900]};
+  text-align: center;
   text-decoration: underline;
+  color: ${COLORS.gray[900]};
 `;
 
 export default Header;
